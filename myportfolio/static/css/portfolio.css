@@ -1,0 +1,45 @@
+body{
+    font-family: sans-serif;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.intro_text {
+    font-family: 'sans-serif';
+    position: relative; /* Ensure the position is set for 'left' to work */
+    animation: text_move 2s forwards; /* Use 'forwards' to retain the final state */
+    animation-timing-function: ease;
+}
+
+@keyframes text_move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50px;
+    }
+}
+.intro_image {
+    position: relative;
+    animation: image_move 2s forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes image_move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+
